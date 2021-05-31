@@ -1,0 +1,138 @@
+:root {
+    --text-color: rgb(230, 230, 230);
+    --background-color: rgb(30, 30, 30);
+    --accent-color: rgb(35, 177, 200);
+    --max-width: 1920px;
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--background-color);
+    padding: 8px 12px;
+    max-width: var(--max-width);
+}
+
+.navbar__logo {
+    font-size: 24px;
+    color: var(--text-color);
+}
+
+.navbar__logo i {
+    color: var(--accent-color);
+    animation: logo_animation 3s infinite;
+}
+
+.navbar__menu {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+.navbar__menu li {
+    padding: 8px 12px;
+}
+
+.navbar__menu li:hover {
+    background: var(--accent-color);
+    border-radius: 4px;
+}
+
+.navbar__toggleBtn {
+    display: none;
+    position: absolute;
+    right: 32px;
+    font-size: 24px;
+    color: var(--accent-color);
+}
+
+@keyframes logo_animation {
+
+    0% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    max-width: var(--max-width);
+}
+
+.word {
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.word__title {
+    text-align: center;
+}
+
+.word__transformation,
+.word__uppercase {
+    margin: 8px auto;
+    width: 540px;
+}
+
+#word__transformation,
+#word__uppercase {
+    padding: 8px;
+    width: 100%;
+    resize:none;
+}
+
+#word__uppercase {
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 24px;
+    }
+
+    .navbar__menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navbar__menu li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar__toggleBtn {
+        display: block;
+    }
+
+    .navbar__menu.active {
+        display: flex;
+    }
+}
