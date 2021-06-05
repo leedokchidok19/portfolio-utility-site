@@ -92,13 +92,15 @@ ul {
 }
 
 .word__transformation,
-.word__uppercase {
+.word__uppercase,
+.word__lowercase {
     margin: 8px auto;
     width: 540px;
 }
 
 #word__transformation,
-#word__uppercase {
+#word__uppercase,
+#word__lowercase {
     padding: 8px;
     width: 100%;
     resize:none;
@@ -106,6 +108,10 @@ ul {
 
 #word__uppercase {
     text-transform: uppercase;
+}
+
+#word__lowercase {
+    text-transform: lowercase;
 }
 
 @media screen and (max-width: 768px) {
