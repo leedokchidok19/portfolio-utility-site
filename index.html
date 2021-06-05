@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="leedokchidok">
-    <meta name="description" content="It is a utility site that provides various convenience functions.">
-    <meta name="title" content="Utility Simple Web Site, leedokchidok">
+    <meta name="description" content="다양한 편의 기능을 제공하는 유틸리티 사이트입니다.">
+    <meta name="title" content="유틸리티 단순 웹 사이트, leedokchidok">
     <meta name="keywords" content="대소문자 변환, 대소문자, 영단어 대문자 변환">
     <title>Utility Simple Web Site</title>
     <link rel="stylesheet" href="style.css">
@@ -14,6 +14,7 @@
 <body>
 
 <nav class="navbar">
+
     <div class="navbar__logo">
         <i class="fas fa-atom"></i>
         <a href="#">LeedokChidok19</a>
@@ -26,26 +27,45 @@
     <a href="#" class="navbar__toggleBtn">
         <i class="fas fa-bars"></i>
     </a>
+
 </nav>
 
 <section class="container">
+
+    <aside class="aside">
+        <script src="https://ads-partners.coupang.com/g.js"></script>
+        <script>
+            new PartnersCoupang.G({"id":412330,"trackingCode":"AF9545504","subId":null,"template":"carousel","width":"200","height":"450"});
+        </script>
+    </aside>
 
     <section class="word">
 
         <div class="word__title">
             <h1>Case Conversion</h1>
+            <div class="word__title-select">
+                <select name="word__select" id="word__select">
+                    <!--
+                    <option value="1">대문자</option>
+                    <option value="2">소문자</option>
+                    <option value="0">카멜 표기법</option>
+                    <option value="0">파스칼 표기법</option>
+                    <option value="0">스네이크 표기법</option>
+                    -->
+                </select>
+            </div>
         </div>
         <hr>
-        <div class="word__transformation">
-            <textarea name="word__transformation" id="word__transformation" cols="50" rows="10" maxlength="500" placeholder="Please enter a character to convert."></textarea>
+        <div class="word__form-div">
+            <textarea name="word__transformation" id="word__transformation" class="word__form-text" cols="50" rows="10" maxlength="500" placeholder="변환할 문자를 입력해주세요."></textarea>
         </div>
         <hr>
-        <div class="word__uppercase">
-            <textarea name="word__uppercase" id="word__uppercase" cols="50" rows="10" maxlength="500" ></textarea>
+        <div class="word__form-div">
+            <textarea name="word__uppercase" id="word__uppercase" class="word__form-text" cols="50" rows="10" maxlength="500" ></textarea>
         </div>
         <hr>
-        <div class="word__lowercase">
-            <textarea name="word__lowercase" id="word__lowercase" cols="50" rows="10" maxlength="500" ></textarea>
+        <div class="word__form-div">
+            <textarea name="word__lowercase" id="word__lowercase" class="word__form-text" cols="50" rows="10" maxlength="500" ></textarea>
         </div>
         <hr>
 

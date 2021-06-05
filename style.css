@@ -1,3 +1,4 @@
+/* Root */
 :root {
     --text-color: rgb(230, 230, 230);
     --background-color: rgb(30, 30, 30);
@@ -18,9 +19,12 @@ ul {
     display: flex;
     list-style: none;
 }
+/* Root */
 
+/* Navigation */
 .navbar {
     margin: auto;
+    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -75,32 +79,34 @@ ul {
     }
 }
 
+/* Navigation */
+
+/* Container */
 .container {
+    margin: auto;
     display: flex;
     justify-content: space-around;
-    flex-direction: column;
     max-width: var(--max-width);
 }
 
 .word {
     border: 1px solid black;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
 }
 
 .word__title {
     text-align: center;
 }
 
-.word__transformation,
-.word__uppercase,
-.word__lowercase {
+.word__form-div {
     margin: 8px auto;
+    display: flex;
     width: 540px;
 }
 
-#word__transformation,
-#word__uppercase,
-#word__lowercase {
+.word__form-text {
     padding: 8px;
     width: 100%;
     resize:none;
@@ -114,6 +120,15 @@ ul {
     text-transform: lowercase;
 }
 
+
+/* aside */
+.aside {
+    margin: 0;
+    padding: 0;
+}
+/* aside */
+
+/* Container */
 @media screen and (max-width: 768px) {
 
     .navbar {
