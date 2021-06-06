@@ -86,6 +86,7 @@ ul {
     margin: auto;
     display: flex;
     justify-content: space-around;
+    flex-direction: column;
     max-width: var(--max-width);
 }
 
@@ -101,11 +102,16 @@ ul {
 }
 
 .word__form-div {
-    margin: 8px auto;
+    margin: 0 auto;
     display: flex;
+    flex-direction: column;
     width: 540px;
 }
 
+.word__form-div > h1 {
+    margin: 0;
+    padding: 8px;
+}
 .word__form-text {
     padding: 8px;
     width: 100%;
@@ -125,6 +131,7 @@ ul {
 .aside {
     margin: 0;
     padding: 0;
+    margin: auto;
 }
 /* aside */
 
